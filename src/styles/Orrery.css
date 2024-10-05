@@ -1,0 +1,79 @@
+.orrery-container {
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  position: relative;
+}
+
+.orrery-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(10, 10, 10, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+  max-width: 300px;
+}
+
+.loading, .error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(10, 10, 10, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ff00ff;
+  color: #ff00ff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.neo-list {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(10, 10, 10, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #00ffff;
+  font-family: 'Roboto', sans-serif;
+  color: #e0e0e0;
+  max-width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.neo-list h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+  margin-top: 0;
+}
+
+.neo-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.neo-list li {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.neo-name {
+  color: #ff00ff;
+  font-weight: bold;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 5px #00ffff; }
+  50% { box-shadow: 0 0 20px #00ffff; }
+  100% { box-shadow: 0 0 5px #00ffff; }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
